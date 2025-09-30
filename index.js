@@ -14,7 +14,9 @@ app.use(
     origin: [
       "http://localhost:3000",
       "http://localhost:3001", 
-      "https://sih-2025-white-board.vercel.app"],
+      "https://gyaan-setu-whiteboard.vercel.app/",
+    
+    ],
   })
 );
 app.use(express.json());
@@ -66,7 +68,6 @@ const io = new Server(server, {
     origin: [
       "http://localhost:3000",
       "http://localhost:3001",
-      "https://sih-2025-white-board.vercel.app"],
     methods: ["GET", "POST"],
   },
 });
