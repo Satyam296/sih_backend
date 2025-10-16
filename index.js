@@ -234,9 +234,9 @@ io.on("connection", (socket) => {
   socket.on("get-definition", async ({ question, userID }) => {
     console.log(question);
     const genAI = new GoogleGenerativeAI(
-      "AIzaSyC_JbJYfF9kBVeISyBMaWT7kkAvbOJMl6g"
+      "AIzaSyBIM9JTcbsaivYrZMk5BOh1s_WY895kXuo"
     );
-    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+    const model = genAI.getGenerativeModel({ model: "gemini-2.5-pro" });
 
     const prompt = `Explain in simple words ${question}`;
 
